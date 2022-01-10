@@ -1,0 +1,8 @@
+.layOut {
+  display: flex;
+}
+
+.mainScreen {
+  flex: 4;
+  padding: 20px;
+}
