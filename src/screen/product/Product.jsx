@@ -6,7 +6,6 @@ import { Container, Table, Image, Button } from 'react-bootstrap'
 import { getProductList } from '../../actions/productActions'
 import Loader from '../../component/Loader'
 import Message from '../../component/Message'
-import { LinkContainer } from 'react-router-bootstrap'
 const Product = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -57,11 +56,9 @@ const Product = () => {
                   )}
                 </td>
                 <td>
-                  <LinkContainer to={`/product/${product._id}`}>
-                    <Button variant='light' className='btn-sm'>
-                      <i className='fas fa-edit'></i>
-                    </Button>
-                  </LinkContainer>
+                  <Button variant='light' className='btn-sm'>
+                    <i className='fas fa-edit'></i>
+                  </Button>
                   <Button variant='light' className='btn-sm'>
                     <i className='fas fa-trash'></i>
                   </Button>

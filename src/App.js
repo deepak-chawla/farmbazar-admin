@@ -7,7 +7,6 @@ import Product from './screen/product/Product'
 import User from './screen/user/User'
 import Order from './screen/order/Order'
 import Signin from './screen/signin/Signin'
-import ProductDetails from './screen/product/ProductDetails'
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
           <Route path='/users' element={<User />} />
           <Route path='/orders' element={<Order />} />
           <Route path='/products' element={<Product />} />
-          <Route path='/product/:productId' element={<ProductDetails />} />
         </Routes>
       </div>
     </Router>

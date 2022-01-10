@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import { Carousel } from 'react-bootstrap'
 import './slide.css'
-import axios from 'axios'
 
 const Slider = ({ slides }) => {
   return (
